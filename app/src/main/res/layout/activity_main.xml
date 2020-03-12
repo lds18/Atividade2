@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <EditText
+            android:id="@+id/textViewP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso(Kg)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/textViewA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura(cm)"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular IMC"
+            android:onClick="CalcularIMC"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="IMC:"
+            android:layout_margin="25dp"
+            />
+        <ImageView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/perfil" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
